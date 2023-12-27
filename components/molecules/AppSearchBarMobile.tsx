@@ -6,7 +6,7 @@ import { useDataContext } from 'hooks/useDataContext';
 // components
 import AppClearButtonProps from '@/components/atoms/AppClearButton';
 import AppNearby from '@/components/atoms/AppNearby';
-import AppSearchOptionMobile from '@/components/atoms/AppSearchOptionMobile';
+import AppSearchOptionMobile from '@/components/atoms/appSearchOptionMobile';
 import AppMobileNavigation from '@/components/atoms/AppNavigationMobile';
 // icons
 import { ChevronLeftIcon, ChevronRightIcon, SearchIcon } from '@heroicons/react/outline';
@@ -38,9 +38,9 @@ const AppSearchBarMobile: FC<IAppSearchBarMobileProps> = ({
         <div className="relative flex items-center justify-center h-12 bg-gray-100 rounded-full">
           {searchPage && (
             <Link href="/">
-              <a className="absolute p-2 duration-300 bg-white rounded-full shadow-md left-1 active:scale-90">
+              <div className="absolute p-2 duration-300 bg-white rounded-full shadow-md left-1 active:scale-90">
                 <ChevronLeftIcon className="h-5" />
-              </a>
+              </div>
             </Link>
           )}
           <button

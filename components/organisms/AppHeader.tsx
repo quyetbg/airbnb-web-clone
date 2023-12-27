@@ -69,7 +69,7 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
           {/* left side - logo */}
           <div className="flex items-center h-12">
             <Link href="/">
-              <a>
+              <div>
                 <AppLogo
                   className={`${
                     isSnapTop ? 'text-white' : 'text-primary'
@@ -82,7 +82,7 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
                   } block xl:hidden`}
                   type={EAppLogo.LOGO}
                 />
-              </a>
+              </div>
             </Link>
           </div>
           {/* small search bar */}
@@ -140,7 +140,7 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
               </AppHeaderOption>
               <AppHeaderOption isSnap={isSnapTop} isActiveHeader={isActiveSearch}>
                 <Link href="/">
-                  <a>Online Experiences</a>
+                  <div>Online Experiences</div>
                 </Link>
               </AppHeaderOption>
             </div>
@@ -148,7 +148,7 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
           {/* right side */}
           <div className="flex items-center justify-end">
             <Link href="/">
-              <a
+              <div
                 className={`${
                   isSnapTop
                     ? 'text-white hover:bg-white hover:bg-opacity-10'
@@ -156,10 +156,10 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
                 } flex items-center h-10 px-4 rounded-full font-medium tracking-wide text-sm`}
               >
                 Become a host
-              </a>
+              </div>
             </Link>
             <Link href="/">
-              <a
+              <div
                 className={`${
                   isSnapTop
                     ? 'text-white hover:bg-white hover:bg-opacity-10'
@@ -167,7 +167,7 @@ const AppHeader: FC<AppHeaderProps> = ({ exploreNearby, searchPage, query }) => 
                 } flex items-center h-10 px-3 mr-1 rounded-full `}
               >
                 <GlobeAltIcon className="h-5" />
-              </a>
+              </div>
             </Link>
             <button className="flex items-center pl-3 pr-1 bg-white border border-gray-200 rounded-full h-11 hover:shadow-md">
               <MenuIcon className="h-5 mr-2 text-gray-300" />

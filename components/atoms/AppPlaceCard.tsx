@@ -10,9 +10,8 @@ const AppPlaceCard = ({ data }) => {
         <Image
           src={data.img}
           alt={data.title}
-          layout="fill"
-          objectFit="cover"
-          className="w-full rounded-xl"
+          fill={true}
+          className="w-full rounded-xl object-cover"
           placeholder="blur"
           blurDataURL={data.img}
           quality={40}

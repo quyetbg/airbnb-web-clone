@@ -76,7 +76,7 @@ const AppFooter = () => {
                     className="text-sm text-gray-500 hover:text-gray-400 hover:underline"
                   >
                     <Link href="/">
-                      <a>{data}</a>
+                      <div>{data}</div>
                     </Link>
                   </li>
                 ))}
@@ -102,17 +102,17 @@ const AppFooter = () => {
             <ul className="flex space-x-6 list-disc">
               <li className="hover:underline">
                 <Link href="/">
-                  <a>Privacy</a>
+                  <div>Privacy</div>
                 </Link>
               </li>
               <li className="hover:underline">
                 <Link href="/">
-                  <a>Terms</a>
+                  <div>Terms</div>
                 </Link>
               </li>
               <li className="hover:underline">
                 <Link href="/">
-                  <a>Sitemap</a>
+                  <div>Sitemap</div>
                 </Link>
               </li>
             </ul>
@@ -121,56 +121,56 @@ const AppFooter = () => {
             <ul className="flex items-center space-x-4">
               <li>
                 <Link href="/">
-                  <a className="flex items-center">
+                  <div className="flex items-center">
                     <GlobeAltIcon className="h-5 mr-1" />
                     <span className="underline">English (US)</span>
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/">
-                  <a className="flex items-center">
+                  <div className="flex items-center">
                     <span className="mr-1">$</span>
                     <span className="underline">USD</span>
-                  </a>
+                  </div>
                 </Link>
               </li>
             </ul>
             <ul className="flex space-x-6">
               <li className="flex items-center">
                 <Link href="/">
-                  <a>
+                  <div>
                     <Image
                       src="/assets/icons/facebook.svg"
                       alt="facebook"
                       height={16}
                       width={16}
                     />
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li className="flex items-center">
                 <Link href="/">
-                  <a>
+                  <div>
                     <Image
                       src="/assets/icons/twitter.svg"
                       alt="facebook"
                       height={16}
                       width={16}
                     />
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li className="flex items-center">
                 <Link href="/">
-                  <a>
+                  <div>
                     <Image
                       src="/assets/icons/instagram.svg"
                       alt="facebook"
                       height={16}
                       width={16}
                     />
-                  </a>
+                  </div>
                 </Link>
               </li>
             </ul>

@@ -6,10 +6,9 @@ const AppHero = () => {
       <div className="absolute z-10 w-full bg-gradient-to-b from-transparent-black to-transparent h-28" />
       <Image
         src="/assets/hero.jpg"
-        layout="fill"
+        fill={true}
+        className="object-cover object-[center_bottom]"
         alt="hero"
-        objectFit="cover"
-        objectPosition="center bottom"
         placeholder="blur"
         blurDataURL="/assets/hero.jpg"
         quality={50}
