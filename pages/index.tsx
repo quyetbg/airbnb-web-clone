@@ -43,17 +43,16 @@ const Home: FC<IHomeDataProps> = ({ exploreNearby, liveAnywhere }) => {
         >
           {liveAnywhere.map((data, index) => (
             <Link key={index} href="#">
-              <a>
+              <div>
                 <div className="p-2 duration-300 lg:p-3 gap-y-4 active:scale-105 active:bg-gray-200 active:bg-opacity-40 rounded-xl">
                   <div className="relative w-full h-40 mb-2 md:h-60 lg:h-72">
                     <Image
                       src={data.img}
                       alt={data.title}
-                      layout="fill"
-                      objectFit="cover"
+                      fill={true}
                       placeholder="blur"
                       blurDataURL={data.img}
-                      className="rounded-xl"
+                      className="rounded-xl object-cover"
                     />
                   </div>
                   <div>
@@ -62,7 +61,7 @@ const Home: FC<IHomeDataProps> = ({ exploreNearby, liveAnywhere }) => {
                     </h3>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           ))}
         </AppSection>

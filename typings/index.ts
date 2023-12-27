@@ -1,2 +1,2 @@
-export * from './Interface';
-export * from './Enums';
+export * from './interface';
+export * from './enums';

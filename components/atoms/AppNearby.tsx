@@ -10,7 +10,7 @@ interface IAppNearbyProps {
 const AppNearby: FC<IAppNearbyProps> = ({ data, isSmall }) => {
   return (
     <Link href="/">
-      <a>
+      <div>
         <div
           key={data.location}
           className={`${
@@ -24,8 +24,7 @@ const AppNearby: FC<IAppNearbyProps> = ({ data, isSmall }) => {
             height={isSmall ? 48 : 64}
             placeholder="blur"
             blurDataURL={data.img}
-            className="rounded-lg"
-            objectFit="cover"
+            className="rounded-lg object-cover"
           />
           <div className={`${isSmall || 'mt-2'} md:mt-0`}>
             <h3
@@ -42,7 +41,7 @@ const AppNearby: FC<IAppNearbyProps> = ({ data, isSmall }) => {
             </span>
           </div>
         </div>
-      </a>
+      </div>
     </Link>
   );
 };

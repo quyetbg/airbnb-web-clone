@@ -6,15 +6,14 @@ const AppBanner = () => {
     <section className="my-12 mb-20">
       <div className="container">
         <Link href="/">
-          <a className="relative block">
+          <div className="relative block">
             <div className="h-[400px] lg:h-[400px] object-cover rounded-3xl">
               <div className="absolute inset-0 z-10 md:hidden" />
               <Image
                 src="/assets/banner.jpg"
                 alt="banner"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-xl"
+                fill={true}
+                className="rounded-xl object-cover"
                 placeholder="blur"
                 quality={50}
                 blurDataURL="/assets/banner.jpg"
@@ -32,7 +31,7 @@ const AppBanner = () => {
                 Get Inspired
               </button>
             </div>
-          </a>
+          </div>
         </Link>
       </div>
     </section>

@@ -156,9 +156,8 @@ const Search = ({ searchResults }) => {
                       <Image
                         src={result.img}
                         alt={result.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg"
+                        fill={true}
+                        className="rounded-lg object-cover"
                         placeholder="blur"
                         blurDataURL={result.img}
                       />
